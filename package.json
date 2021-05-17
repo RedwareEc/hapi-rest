@@ -1,0 +1,30 @@
+{
+  "name": "@redware/hapi-rest",
+  "version": "1.0.0",
+  "description": "Plugin to create a rest routes",
+  "author": "Andres Navarrete",
+  "license": "MIT",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "scripts": {
+    "build:ts": "ttsc -p tsconfig.build.json",
+    "watch": "ttsc -p tsconfig.build.json -w",
+    "test": "jest",
+    "prepare": "yarn build:ts"
+  },
+  "devDependencies": {
+    "@types/pluralize": "^0.0.29",
+    "@types/ramda": "^0.27.14"
+  },
+  "dependencies": {
+    "@redware/js-utils": "^3.0.0",
+    "consola": "^2.15.3",
+    "pluralize": "^8.0.0",
+    "ramda": "^0.27.1"
+  },
+  "gitHead": "3e2da40e6dbc15180f184e9b48f0895aba0e0e9c"
+}
